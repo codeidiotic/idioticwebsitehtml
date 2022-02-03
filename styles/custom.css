@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+/* Font Awesome Icons Link */
+/* https://fontawesome.com/v5.0/icons?d=gallery&p=2&m=free */
+
+:root{
+    --font-family-main: 'Poppins', sans-serif;;
+    --font-family-secondary: 'Merriweather Sans', sans-serif;
+    --color-primary: #00AFFF;
+    --color-secondary: #0054B4;
+    --light-background: #efefef;
+    --instagram-color: #bc2a8d;
+    --facebook-color: #4267B2;
+    --color-dark: rgba(0, 0, 0, 1);
+    --bold-weight: 900;
+}
+
+html {font-size: 100%;}
+
+body {
+    background: white;
+    font-family: var(--font-family-main);
+    font-weight: 500;
+    line-height: 1.75;
+    color: var(--color-dark);
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+    /* margin: 3rem 0 1.38rem; */
+    font-family: var(--font-family-main);
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+.link-btn{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.primary-btn-fill{
+    background: linear-gradient(to bottom, #1db8ff, #009de5);
+    color: white;
+}
+
+.primary-btn-fill:hover{
+    color: white;
+}
+
+.primary-btn-stroke{
+    border: solid 2px #009de5;
+    color: #009de5;
+}
+
+.primary-btn-stroke:hover{
+    color: #009de5;
+}
+
+/* Header Navigation Start */
+.header{
+    position: sticky;
+    top: 0;
+}
+
+.navbar-toggler{
+    width: 16px;
+    height: 16px;
+    position: relative;
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus{
+    outline: none;
+    box-shadow: none;
+    border: 0;
+}
+
+.navbar-toggler span{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler .top-bar{
+    transform: rotate(135deg);
+    margin-top: 0px;
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar{
+    transform: rotate(-135deg);
+    margin-top: 0px;
+}
+
+.navbar-toggler.collapsed .top-bar{
+    margin-top: -16px;
+    transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    margin-top: 16px;
+    transform: rotate(0deg);
+}
+
+.toggler-icon{
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #6c6d6e;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+}
+
+.header .navbar-nav .nav-item .nav-link{
+    color: var(--color-dark);
+}
+
+.header .navbar-nav .nav-item .nav-link:hover{
+    color: var(--color-secondary);
+}
+
+.header .navbar-nav .nav-item .nav-link.active{
+    color: var(--color-primary);
+    font-weight: var(--bold-weight);
+}
+/* Header Navigation End */
+
+/* Banner section */
+.banner-section{
+    /* background: linear-gradient(to left, rgb(189 224 255 / 50%), rgb(79 101 116 / 13%)); */
+    background: radial-gradient(#bbe1ffa3, #efefef);
+}
+
+.instagram-color{
+    color: var(--instagram-color);
+}
+
+.facebook-color{
+    color: var(--facebook-color);
+}
+
+.empower-text{
+    color: var(--color-primary);
+    font-size: 4.5rem;
+    font-weight: 500;
+    font-family: var(--font-family-secondary);
+    text-transform: capitalize;
+}
+
+.carousel-inner .carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Banner section end */
