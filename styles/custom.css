@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto+Condensed&display=swap');
 /* Font Awesome Icons Link */
 /* https://fontawesome.com/v5.0/icons?d=gallery&p=2&m=free */
 
 :root{
-    --font-family-main: 'Poppins', sans-serif;;
+    --font-family-main: 'Roboto', sans-serif;;
     --font-family-secondary: 'Merriweather Sans', sans-serif;
+    --font-family-tertiary: 'PT Sans', sans-serif;
     --color-primary: #00AFFF;
     --color-secondary: #0054B4;
     --light-background: #efefef;
@@ -20,7 +23,7 @@ html {font-size: 100%;}
 body {
     background: white;
     font-family: var(--font-family-main);
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.75;
     color: var(--color-dark);
 }
@@ -28,24 +31,21 @@ body {
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
-    /* margin: 3rem 0 1.38rem; */
-    font-family: var(--font-family-main);
-    font-weight: 400;
     line-height: 1.3;
+    font-family: var(--font-family-tertiary);
 }
 
 h1 {
-    margin-top: 0;
-    font-size: 3.052rem;
+    font-size: 3.05rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {font-size: 2.44rem;}
 
-h3 {font-size: 1.953rem;}
+h3 {font-size: 1.95rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.56rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.2rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
@@ -73,10 +73,15 @@ small, .text_small {font-size: 0.8rem;}
     color: #009de5;
 }
 
+.secondary-color{
+    color: var(--color-secondary);
+}
+
 /* Header Navigation Start */
 .header{
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .navbar-toggler{
@@ -161,6 +166,10 @@ small, .text_small {font-size: 0.8rem;}
     background: radial-gradient(#bbe1ffa3, #efefef);
 }
 
+.banner-section .carousel{
+    pointer-events: none;
+}
+
 .instagram-color{
     color: var(--instagram-color);
 }
@@ -177,9 +186,87 @@ small, .text_small {font-size: 0.8rem;}
     text-transform: capitalize;
 }
 
-.carousel-inner .carousel-item img{
+.banner-section .carousel-inner .carousel-item img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 /* Banner section end */
+
+/* we hang out with the best section */
+.section-text{
+    margin: auto;
+    max-width: 30rem;
+    text-align: justify;
+    margin-bottom: 1.5rem;
+}
+
+.section-heading{
+    color: var(--color-primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-heading::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(to right, #00000000, #00afff, #00000000);
+    width: 100%;
+    left: 0;
+    bottom: -0.25rem;
+    opacity: 0.5;
+}
+
+.our-community .carousel-inner .carousel-item .brands-icons{
+    margin-bottom: 1.5rem;
+}
+
+/* we hang out with the best section */
+.work-done-card-container{
+    border: solid 1px var(--color-secondary);
+    border-radius: 5px;
+    padding: 1.5rem;
+    margin: 0 0.5rem 1.5rem 0.5rem;
+    max-width: 20rem;
+}
+
+.work-done-card-img{
+    margin: 0 auto;
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+.work-done-card-img img{
+    width: 75%;
+    object-fit: cover;
+}
+
+/* we hang out with the best section */
+.case-study-card-container{
+    border: solid 1px var(--facebook-color);
+    max-width: 25rem;
+    padding: 1.5rem;
+    background: linear-gradient(to bottom, #e1f6ff, #e0e5e7);
+    margin: 0 0.5rem 1.5rem 0.5rem;
+}
+
+.case-study-card-header{
+    max-width: 10rem;
+    max-height: 10rem;
+    margin: auto;
+}
+
+.case-study-card-header img{
+    width: 100%;
+    height: 100%;
+}
+
+.category, .case-study-title{
+    max-height: 2rem;
+}
+
+.objective{
+    max-height: 3.5rem;
+}

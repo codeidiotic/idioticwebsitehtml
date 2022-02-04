@@ -1,13 +1,24 @@
 /* All the css related to media queries will come here */
 /* x-small devices */
 @media (min-width: 0) and (max-width: 576px){
-    
+    .case-study-card-container{
+        max-width: 20rem;
+    }
+
+    .case-study-card-header{
+        max-width: 15rem;
+        max-height: 15rem;
+    }
 }
 
 /* small devices */
 @media (min-width: 577px) and (max-width: 768px){
     .carousel{
         margin: auto;
+    }
+
+    .work-done-card-container{
+        max-width: 15rem;
     }
 }
 
@@ -20,5 +31,5 @@
 
 /* large devices */
 @media (min-width: 993px) and (max-width: 1200px){
-    
+
 }

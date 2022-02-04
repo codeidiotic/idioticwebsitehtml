@@ -29,7 +29,7 @@ function changeRunningText(){
     dynamicTextEle.innerText = socialMediaChannels[dynamicTextCounter]['name'];
     dynamicTextEle.className = 'fw-bold ' + socialMediaChannels[dynamicTextCounter]['className'];
     dynamicTextCounter++;
-    if(dynamicTextCounter == socialMediaChannels.length - 1){
+    if(dynamicTextCounter == socialMediaChannels.length){
         dynamicTextCounter = 0;
     }
     setTimeout(changeRunningText, 5000);
