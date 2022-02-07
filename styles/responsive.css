@@ -9,6 +9,24 @@
         max-width: 15rem;
         max-height: 15rem;
     }
+
+    .whyus-card{
+        padding: 1rem 0.25rem;
+    }
+
+    .whyus-card, .whyus-card:nth-child(odd){
+        flex-direction: column;
+    }
+
+    .whyus-card-image{
+        margin-bottom: 1rem;
+    }
+
+    .whyus-card-content p{
+        text-align: center;
+        padding-left: 0;
+        margin: auto;
+    }
 }
 
 /* small devices */
