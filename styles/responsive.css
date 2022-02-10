@@ -27,6 +27,44 @@
         padding-left: 0;
         margin: auto;
     }
+
+    /* influencer page css */
+    .influencer-banner-section{
+        flex-direction: column-reverse;
+    }
+
+    .banner-text{
+        text-align: center;
+    }
+
+    .banner-text p{
+        white-space: normal;
+    }
+
+    .cards-container{
+        gap: 1.5rem;
+    }
+
+    .network-section .card:nth-child(even){
+        top: 0;
+    }
+
+    .influencer-question{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .influencer-question-text p{
+        white-space: normal;
+    }
+
+    .left-section-signup-form{
+        width: 100%;
+    }
+
+    .right-section-signup-form{
+        display: none;
+    }
 }
 
 /* small devices */

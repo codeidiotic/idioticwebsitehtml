@@ -21,7 +21,9 @@ let dynamicTextCounter = 0;
 document.addEventListener('DOMContentLoaded', pageLoadComplete);
 
 function pageLoadComplete(){
-    changeRunningText();
+    if(window.location.pathname.indexOf("index") > -1){
+        changeRunningText();
+    }
 }
 
 function changeRunningText(){
@@ -33,4 +35,11 @@ function changeRunningText(){
         dynamicTextCounter = 0;
     }
     setTimeout(changeRunningText, 5000);
+}
+
+function scrollToInfluencerSignupForm(){
+    let signup_form_element = document.getElementById("signupForm");
+    signup_form_element.scrollIntoView({
+        behavior: "smooth"
+    });
 }
