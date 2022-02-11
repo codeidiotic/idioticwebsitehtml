@@ -162,7 +162,7 @@ small, .text_small {font-size: 0.8rem;}
 
 /* Banner section */
 .banner-section{
-    background: radial-gradient(#bbe0fda3, #d6e0e7);
+    background: radial-gradient(#e5f4ffa3, #ecf7ff);
 }
 
 .banner-section .carousel{
@@ -245,7 +245,90 @@ small, .text_small {font-size: 0.8rem;}
 /* we hang out with the best section */
 
 /* case study section start */
+.case-studies-section{
+    text-align: center;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #e7f0ff;
+    margin-bottom: 1.5rem;
+}
+
+.case-study-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.case-study-cards > *{
+    flex-basis: 100%;
+}
+
+.case-study-image{
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
 .case-study-card-container{
+    border: solid 2px #2463c1;
+    border-radius: 2px;
+    max-width: 40rem;
+    height: 19.375rem;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: border 400ms ease-in-out,
+                transform 400ms ease-in-out,
+                box-shadow 400ms ease-in-out 400ms;
+}
+
+.case-study-card-container:hover{
+    border-color: var(--color-primary);
+    transform: scale(0.97);
+    box-shadow: 0 0 5px var(--color-primary);
+}
+
+.case-study-card-container:nth-child(even){
+    flex-direction: row-reverse;
+    margin-top: 1.5rem;
+}
+
+.case-study-card-content{
+    padding: 1rem 0.25rem 1rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+.case-study-card-content a{
+    font-weight: var(--bold-weight);
+    color: #fb4711;
+    margin-top: auto;
+}
+
+.case-study-category, .case-study-name{
+    text-transform: uppercase;
+    font-family: var(--font-family-secondary);
+    font-weight: var(--bold-weight);
+}
+
+.case-study-name{
+    opacity: 0.8;
+}
+
+.case-study-category{
+    color: var(--color-primary);
+}
+
+.case-study-description{
+    white-space: pre-line;
+    color: var(--color-dark);
+}
+
+/* .case-study-card-container{
     border: solid 1px var(--facebook-color);
     max-width: 25rem;
     padding: 1.5rem;
@@ -270,7 +353,7 @@ small, .text_small {font-size: 0.8rem;}
 
 .objective{
     max-height: 3.5rem;
-}
+} */
 /* case study section end */
 
 /* why us section start */
@@ -447,12 +530,6 @@ small, .text_small {font-size: 0.8rem;}
     padding-bottom: 4.5rem;
     text-align: center;
     background-color: #1b3c6e;
-}
-
-.section-heading{
-    color: var(--color-primary);
-    margin-bottom: 0.75rem;
-    text-transform: uppercase;
 }
 
 .section-tagline{
