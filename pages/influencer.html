@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navMenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Brands</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./brands.html">Brands</a></li>
                     <li class="nav-item"><a class="nav-link active" href="./influencer.html">Influencer</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Why Us?</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
@@ -184,61 +184,63 @@
             These are some of the most encountered questions budding influencers 
             often have before to get them going
         </p>
-        <div class="faq-question-container">
-            <p class="faq-question">
-                <span class="faq-question-icon">
-                    <img src="../images/icons/arrow-up.svg">
-                </span>
-                Does Idiotic Media screen influencers?
-            </p>
-            <p class="faq-answer">Yes, to ensure that the Influencers adds value to the brand campaign,
-            we have set a few internal policies to screen which Influencers should be 
-            made discoverable for the brand. Do you feel you create good content? 
-            Join our network and be discovered by Brands!</p>
-        </div>
-
-        <div class="faq-question-container">
-            <p class="faq-question">
-                <span class="faq-question-icon">
-                    <img src="../images/icons/arrow-up.svg">
-                </span>
-                How does Idiotic Media Payment Works?
-            </p>
-            <p class="faq-answer">Upon completion of deliverables for a campaign, 
-            you can choose to receive the payment within 10 Working days 
-            by accepting a 10% commission to be given to Idiotic Media. 
-            If you are not in a hurry to receive the payment, 
-            all payments are cleared within 10-45 days of campaign completion. 
-            All the payments are processed directly into your bank account 
-            through our secure system.</p>
-        </div>
-
-        <div class="faq-question-container">
-            <p class="faq-question">
-                <span class="faq-question-icon">
-                    <img src="../images/icons/arrow-up.svg">
-                </span>
-                How should I price my listing on Idiotic Media?
-            </p>
-            <p class="faq-answer">You have complete freedom to set your prices for 
-            campaigns, you only need to make sure that your profile and content 
-            created will resonate to the price you set. If the brand finds the 
-            price unreasonable, the probability of you being chosen by the brand 
-            for a collaboration will be significantly low.</p>
-        </div>
-
-        <div class="faq-question-container">
-            <p class="faq-question">
-                <span class="faq-question-icon">
-                    <img src="../images/icons/arrow-up.svg">
-                </span>
-                Does Idiotic Media charge a commission?
-            </p>
-            <p class="faq-answer">Yes, to ensure that the Influencers adds value to 
-            the brand campaign, we have set a few internal policies to screen which 
-            Influencers should be made discoverable for the brand. Do you 
-            feel you create good content? Join our network and be discovered 
-            by Brands!</p>
+        <div class="row">
+            <div class="faq-question-container" onclick="toggleFaq(0)">
+                <p class="faq-question">
+                    <span class="faq-question-icon">
+                        <img src="../images/icons/arrow-up.svg" id="faqIcon_0">
+                    </span>
+                    Does Idiotic Media screen influencers?
+                </p>
+                <p class="faq-answer" id="faqAnswer_0">Yes, to ensure that the Influencers adds value to the brand campaign,
+                we have set a few internal policies to screen which Influencers should be 
+                made discoverable for the brand. Do you feel you create good content? 
+                Join our network and be discovered by Brands!</p>
+            </div>
+    
+            <div class="faq-question-container" onclick="toggleFaq(1)">
+                <p class="faq-question">
+                    <span class="faq-question-icon">
+                        <img src="../images/icons/arrow-up.svg" id="faqIcon_1">
+                    </span>
+                    How does Idiotic Media Payment Works?
+                </p>
+                <p class="faq-answer" id="faqAnswer_1">Upon completion of deliverables for a campaign, 
+                you can choose to receive the payment within 10 Working days 
+                by accepting a 10% commission to be given to Idiotic Media. 
+                If you are not in a hurry to receive the payment, 
+                all payments are cleared within 10-45 days of campaign completion. 
+                All the payments are processed directly into your bank account 
+                through our secure system.</p>
+            </div>
+    
+            <div class="faq-question-container" onclick="toggleFaq(2)">
+                <p class="faq-question">
+                    <span class="faq-question-icon">
+                        <img src="../images/icons/arrow-up.svg" id="faqIcon_2">
+                    </span>
+                    How should I price my listing on Idiotic Media?
+                </p>
+                <p class="faq-answer" id="faqAnswer_2">You have complete freedom to set your prices for 
+                campaigns, you only need to make sure that your profile and content 
+                created will resonate to the price you set. If the brand finds the 
+                price unreasonable, the probability of you being chosen by the brand 
+                for a collaboration will be significantly low.</p>
+            </div>
+    
+            <div class="faq-question-container" onclick="toggleFaq(3)">
+                <p class="faq-question">
+                    <span class="faq-question-icon">
+                        <img src="../images/icons/arrow-up.svg" id="faqIcon_3">
+                    </span>
+                    Does Idiotic Media charge a commission?
+                </p>
+                <p class="faq-answer" id="faqAnswer_3">Yes, to ensure that the Influencers adds value to 
+                the brand campaign, we have set a few internal policies to screen which 
+                Influencers should be made discoverable for the brand. Do you 
+                feel you create good content? Join our network and be discovered 
+                by Brands!</p>
+            </div>
         </div>
     </section>
     <footer>
@@ -253,12 +255,12 @@
             <div class="social-icons">
                 <img src="../images/icons/facebook.svg" alt="facebook icon">
                 <img src="../images/icons/instagram.svg" alt="instagram icon">
-                <img src="../images/icons/linkedin.svg" alt="">
-                <img src="../images/icons/twitter.svg" alt="">
-                <img src="../images/icons/youtube.svg" alt="">
+                <img src="../images/icons/linkedin.svg" alt="linkedin icon">
+                <img src="../images/icons/twitter.svg" alt="twitter icon">
+                <img src="../images/icons/youtube.svg" alt="youtube icon">
             </div>
             <div class="btn-group">
-                <a href="#" class="btn-link brand-btn">Join as a Brand</a>
+                <a href="./brands.html" class="btn-link brand-btn">Join as a Brand</a>
                 <a href="#signupForm" class="btn-link influencer-btn">Join as an Influencer</a>
             </div>
             <div class="shortcut-links">

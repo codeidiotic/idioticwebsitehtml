@@ -81,6 +81,25 @@
     .right-section-signup-form{
         display: none;
     }
+
+    /* brands page css */
+    .brands-banner-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brands-banner-section img{
+        max-width: 20rem;
+        padding: 0 0.25rem;
+    }
+
+    .brands-banner-text{
+        padding: 0 0.25rem;
+    }
+
+    .brands-banner-text h3{
+        white-space: normal;
+    }
 }
 
 /* small devices */
@@ -91,6 +110,16 @@
 
     .work-done-card-container{
         max-width: 15rem;
+    }
+
+    /* brands page css */
+    .brands-banner-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brands-banner-section h3{
+        white-space: normal;
     }
 }
 
