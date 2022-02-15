@@ -321,7 +321,7 @@ small, .text_small {font-size: 0.8rem;}
 
 .case-study-card-container:nth-child(even){
     flex-direction: row-reverse;
-    margin-top: 1.5rem;
+    /* margin-top: 1.5rem; */
 }
 
 .case-study-card-content{
