@@ -204,12 +204,20 @@
     color: var(--dark);
 }
 
+.header-carousel{
+    height: calc(100vh - 4rem);
+}
+
+.header-carousel .owl-stage-outer{
+    height: 100%;
+}
+
 .header-carousel .owl-carousel-text {
     position: absolute;
     width: 100%;
     height: 100%;
     padding: 3rem;
-    top: -3rem;
+    top: -7.5rem;
     left: 0;
     display: flex;
     align-items: end;
@@ -336,11 +344,6 @@
 
 .service-item:hover .btn {
     width: 140px;
-}
-
-/* Brands Showcase */
-.brands-showcase img{
-    max-width: 6rem;
 }
 
 /*** Feature ***/

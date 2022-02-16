@@ -150,11 +150,12 @@ function typeWord(){
 }
 
 function createBrandsShowcaseSlider(){
-    // let slick_properties = {
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     slidesToShow: 3,
-    //     slidesToScroll: 3
-    // };
-    // $(".brands-showcase").slick(slick_properties);  
+    let slick_properties = {
+        autoplay: true,
+        autoplaySpeed: 5000,
+        slidesToShow: 6,
+        slidesToScroll: 3,
+        loop: true
+    };
+    // $(".brands-showcase").slick(slick_properties);
 }
