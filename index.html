@@ -1,389 +1,665 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Idiotic Media</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/logo/title-icon.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/slick/slick.css" rel="stylesheet" type="text/css" />
+    <link href="lib/slick/slick-theme.css" type="text/css" />
     
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js" integrity="sha512-Tn2m0TIpgVyTzzvmxLNuqbSJH3JP8jm+Cy3hvHrW7ndTDcJ1w5mBiksqDBb8GpE2ksktFvDB/ykZ0mDpsZj20w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="./styles/custom.css" rel="stylesheet">
-    <link href="./styles/responsive.css" rel="stylesheet">
-    <title>Home Page</title>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Header and Navigation -->
-    <header class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light px-3">
-            <a class="navbar-brand text-primary fw-bold" href="#">
-                <img class="w-50" src="./images/logo/idiotic.png">
-            </a>
-            <button class="navbar-toggler collapsed d-flex flex-column justify-content-around d-md-none" data-bs-toggle="collapse" data-bs-target="#navMenu">
-                <span class="toggler-icon top-bar"></span>
-                <span class="toggler-icon middle-bar"></span>
-                <span class="toggler-icon bottom-bar"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/brands.html">Brands</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./pages/influencer.html">Influencer</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#whyusSection">Why Us?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <!-- Navigation Menu End -->
-    <main>
-        <!-- banner section start -->
-        <section class="banner-section py-2">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-space-evenly">
-                    <div class="ps-md-5 col-12 col-md-6 text-center text-md-start">
-                        <h1 class="empower-text">we empower</h1>
-                        <p class="ps-1 mb-3">
-                            Your Brand to Achieve more on
-                            <span id="dynamicText"></span>
-                        </p>
-                        <div class="btn-group ps-1 mb-3">
-                            <a href="#" class="link-btn primary-btn-fill me-3">I am a Brand</a>
-                            <a href="#" class="link-btn primary-btn-stroke">I am an Influencer</a>
-                        </div>
-                    </div>
-                    <div id="carouselExampleControls" class="carousel slide col-sm-8 col-md-5 offset-md-1" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="./images/banner/circle1.jpeg" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/banner/circle6.jpg" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/banner/circle7.jpg" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="./images/banner/circle5.jpg" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light p-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-7 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>123 Street, New York, USA</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center py-3">
+                    <small class="far fa-clock text-primary me-2"></small>
+                    <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
                 </div>
             </div>
-        </section>
-        <!-- we hang out with the best section -->
-        <section class="container text-center py-2 our-community">
-            <h4 class="section-heading">
-                We Hang out with the Best
-            </h4>
-            <p class="section-text">
-                From great experience on a wallet app to an amazing fragrance,
-                From streaming to tasty and silky treats, our ideas are everywhere. 
-                In order to constantly evolve ourselves, we make sure
-                We keep pushing and 'Never Settle'.
-            </p>
-            <div id="carouselBrands" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row align-items-center">
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/bulbultv.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/burgerking.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/hotstar.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/zee5.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/storytel.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/airtel.jpg" class="img-responsive w-50 m-auto">
-                            </div>
+            <div class="col-lg-5 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center py-3 me-4">
+                    <small class="fa fa-phone-alt text-primary me-2"></small>
+                    <small>+012 345 6789</small>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square rounded-circle bg-white text-primary me-0" href=""><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+            <!-- <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>Klinik</h1> -->
+            <img src="./img/logo/idiotic.png" class="w-50">
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">home</a>
+                <a href="#" class="nav-item nav-link">influencer</a>
+                <a href="#" class="nav-item nav-link">brands</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
+                        <a href="feature.html" class="dropdown-item">Feature</a>
+                        <a href="team.html" class="dropdown-item">Our Doctor</a>
+                        <a href="appointment.html" class="dropdown-item">Appointment</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <a href="#" class="nav-item nav-link">why us</a>
+                <a href="#" class="nav-item nav-link">careers</a>
+            </div>
+            <!-- <a href="" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid header dark-bg p-0 mb-5">
+        <div class="row g-0 align-items-center flex-column-reverse flex-lg-row">
+            <div class="col-lg-6 p-5 wow fadeIn" data-wow-delay="0.1s">
+                <!-- <h1 class="display-4 text-white mb-5">Good Health Is The Root Of All Heppiness</h1> -->
+                <h1 class="display-1 text-white">We Empower</h1>
+                <h4 class="text-white mb-5">Your Brand to Achieve more on 
+                    <span id="dynamicText"></span>
+                </h4>
+                <div class="row g-4 mb-5">
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h5 class="text-white mb-1" data-toggle="counter-up">15000</h5>
+                            <p class="text-light mb-0">Influencers</p>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="row align-items-center">
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/bingo.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/like.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/dominos.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/goibibo.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/fox.png" class="img-responsive w-50 m-auto">
-                            </div>
-                            <div class="col-4 col-lg-2 brands-icons">
-                                <img src="./images/brands/flipkart.png" class="img-responsive w-50 m-auto">
-                            </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h5 class="text-white mb-1" data-toggle="counter-up">300</h5>
+                            <p class="text-light mb-0">Brands</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="border-start border-light ps-4">
+                            <h5 class="text-white mb-1" data-toggle="counter-up">12345</h5>
+                            <p class="text-light mb-0">Campaigns</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- how we get things done section -->
-        <section class="container-fluid text-center py-2">
-            <h4 class="section-heading">how we get things done?</h4>
-            <div class="row justify-content-around mt-3">
-                <article class="work-done-card-container">
-                    <div class="work-done-card-img">
-                        <img src="./images/workdone/1.png">
-                    </div>
-                    <div class="work-done-card-content">
-                        <h5 class="fw-bold text-uppercase">media</h5>
-                        <p>Scaling impact of your brand's ads across Top Channels and shows on YouTube.</p>
-                    </div>
-                </article>
-                <article class="work-done-card-container">
-                    <div class="work-done-card-img">
-                        <img src="./images/workdone/2.png">
-                    </div>
-                    <div class="work-done-card-content">
-                        <h5 class="fw-bold text-uppercase">branded campaigns</h5>
-                        <p>Collaborations achieving award winning results and exceeding expectations</p>
-                    </div>
-                </article>
-                <article class="work-done-card-container">
-                    <div class="work-done-card-img">
-                        <img src="./images/workdone/3.png">
-                    </div>
-                    <div class="work-done-card-content">
-                        <h5 class="fw-bold text-uppercase">digital production</h5>
-                        <p>A killer Production team capable of producing 6-second spots to a premium series.</p>
-                    </div>
-                </article>
-                <article class="work-done-card-container">
-                    <div class="work-done-card-img">
-                        <img src="./images/workdone/4.png">
-                    </div>
-                    <div class="work-done-card-content">
-                        <h5 class="fw-bold text-uppercase">influencer strategy</h5>
-                        <p>Boosting your brand's message through a tight knit network of creators with a massive worldwide reach.</p>
-                    </div>
-                </article>
-                <article class="work-done-card-container">
-                    <div class="work-done-card-img">
-                        <img src="./images/workdone/5.png">
-                    </div>
-                    <div class="work-done-card-content">
-                        <h5 class="fw-bold text-uppercase">reporting and analysis</h5>
-                        <p>Our team delivers customized Recap Reports containing all the relevant data and analytics you need.</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-        <!-- how we get things done section -->
-        <!-- case studies section -->
-        <section class="container-fluid case-studies-section">
-            <h4 class="section-heading">case studies</h4>
-            <h5 class="fw-bold opacity-75">A look into the stuff we do</h5>
-            <div class="case-study-cards">
-                <article class="case-study-card-container">
-                    <img src="./images/casestudies/asur.jpg" class="case-study-image"/>
-                    <div class="case-study-card-content">
-                        <div class="case-study-category">web series</div>
-                        <div class="case-study-name">asur - voot select</div>
-                        <div class="case-study-description">Objective was to drive awareness 
-                        about the web series</div>
-                        <a href="#">Read More</a>
-                    </div>
-                </article>
-                <article class="case-study-card-container">
-                    <img src="./images/casestudies/familyman.jpg" class="case-study-image"/>
-                    <div class="case-study-card-content">
-                        <div class="case-study-category">web series</div>
-                        <div class="case-study-name">the family man - prime video</div>
-                        <div class="case-study-description">Campaign was done to promote the 
-                        theme song of the web series</div>
-                        <a href="#">Read More</a>
-                    </div>
-                </article>
-                <article class="case-study-card-container">
-                    <img src="./images/casestudies/priyagold.jpg" class="case-study-image"/>
-                    <div class="case-study-card-content">
-                        <div class="case-study-category">meme marketing</div>
-                        <div class="case-study-name">priyagold</div>
-                        <div class="case-study-description">The campaign Objective was to build brand 
-                        awareness for PriyaGold Biscuits</div>
-                        <a href="#">Read More</a>
-                    </div>
-                </article>
-                <article class="case-study-card-container">
-                    <img src="./images/casestudies/oppo.jpg" class="case-study-image"/>
-                    <div class="case-study-card-content">
-                        <div class="case-study-category">content amplification</div>
-                        <div class="case-study-name">oppo f-17</div>
-                        <div class="case-study-description">The Campaign was done to highlight 
-                        and promote the OPPO's F17</div>
-                        <a href="#">Read More</a>
-                    </div>
-                </article>
-            </div>
-            <button class="banner-btn" type="button">View All Work</button>
-            <!-- <div class="row justify-content-center">
-                <article class="col-12 col-md-6 col-xxl-3 case-study-card-container d-sm-flex p-sm-0 text-sm-start">
-                    <div class="case-study-card-header m-sm-0">
-                        <img src="./images/casestudies/asur.jpg" alt="asur web series">
-                    </div>
-                    <div class="case-study-card-content ps-sm-2 pt-sm-2 pe-sm-2">
-                        <p class="case-study-title fw-bold text-uppercase mb-0 secondary-color">web series</p>
-                        <p class="category fw-bold text-capitalize mb-0 text-uppercase">asur- voot select</p>
-                        <p class="objective mb-3">Objective was to drive awareness about the web series</p>
-                        <a href="#" class="fw-bold text-danger small float-sm-end">Read More</a>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-xxl-3 case-study-card-container d-sm-flex flex-md-row-reverse p-sm-0 text-sm-start">
-                    <div class="case-study-card-header m-sm-0">
-                        <img src="./images/casestudies/familyman.jpg" alt="family man web series">
-                    </div>
-                    <div class="case-study-card-content ps-sm-2 pt-sm-2 pe-sm-2">
-                        <p class="case-study-title fw-bold text-uppercase mb-0 secondary-color">web series</p>
-                        <p class="category fw-bold text-capitalize mb-0 text-uppercase">the family man</p>
-                        <p class="objective mb-3">Campaign was done to promote the theme song of the family man</p>
-                        <a href="#" class="fw-bold text-danger small float-sm-end">Read More</a>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-xxl-3 case-study-card-container d-sm-flex p-sm-0 text-sm-start">
-                    <div class="case-study-card-header m-sm-0">
-                        <img src="./images/casestudies/priyagold.jpg" alt="priyagold marketing">
-                    </div>
-                    <div class="case-study-card-content ps-sm-2 pt-sm-2 pe-sm-2">
-                        <p class="case-study-title fw-bold text-uppercase mb-0 secondary-color">meme marketing</p>
-                        <p class="category fw-bold text-capitalize mb-0 text-uppercase">priyagold</p>
-                        <p class="objective mb-3">Objective was to drive awareness about the web series</p>
-                        <a href="#" class="fw-bold text-danger small float-sm-end">Read More</a>
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 col-xxl-3 case-study-card-container d-sm-flex flex-md-row-reverse p-sm-0 text-sm-start">
-                    <div class="case-study-card-header m-sm-0">
-                        <img src="./images/casestudies/oppo.jpg" alt="oppo phone promotion">
-                    </div>
-                    <div class="case-study-card-content ps-sm-2 pt-sm-2 pe-sm-2">
-                        <p class="case-study-title fw-bold text-uppercase mb-0 secondary-color">content amplification</p>
-                        <p class="category fw-bold text-capitalize mb-0 text-uppercase">oppo</p>
-                        <p class="objective mb-3">Campaign was done to highlight and promote the OPPO's F17</p>
-                        <a href="#" class="fw-bold text-danger small float-sm-end">Read More</a>
-                    </div>
-                </article>
-            </div> -->
-            <!-- <a href="#" class="secondary-color">View All Work</a> -->
-        </section>
-        <!-- case studies section -->
-        <!-- why us section -->
-        <section class="container whyus-section" id="whyusSection">
-            <h4 class="section-heading text-center">Why IDIOTIC MEDIA</h4>
-            <div class="whyus-card">
-                <div class="whyus-card-image">
-                    <img src="./images/whyus/one.png" alt="reason-1">
-                </div>
-                <div class="whyus-card-content">
-                    <p class="whyus-card-header">Over 1500+ Creators</p>
-                    <p class="whyus-card-subtitle">
-                        Run your campaigns with our carefully hand picked creators 
-                        based on not only the 'follower count' but content quality, 
-                        user engagements, overall influence, impact, relevance, 
-                        and other important factors.
-                    </p>
+                <div>
+                    <a href="" class="btn btn-primary-bg rounded-0 py-3 px-3">
+                        I am a Brand
+                        <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
+                    <a href="" class="ms-2 btn btn-primary-bg-outline rounded-0 py-3 px-3">
+                        I am an Influencer
+                        <i class="fa fa-arrow-right ms-3"></i>
+                    </a>
                 </div>
             </div>
-            <div class="whyus-card">
-                <div class="whyus-card-image">
-                    <img src="./images/whyus/two.png" alt="reason-2">
-                </div>
-                <div class="whyus-card-content">
-                    <p class="whyus-card-header">No Language Barrier</p>
-                    <p class="whyus-card-subtitle">
-                        We make sure the content not only reaches the general Hindi 
-                        and English speaking audience, but also regional Tamil, 
-                        Telugu, Kannada and Malayalam audience through 
-                        our popular regional pages across social media.
-                    </p>
-                </div>
-            </div>
-            <div class="whyus-card">
-                <div class="whyus-card-image">
-                    <img src="./images/whyus/three.png" alt="reason-3">
-                </div>
-                <div class="whyus-card-content">
-                    <p class="whyus-card-header">A Massive Reach of over 20 Million+</p>
-                    <p class="whyus-card-subtitle">
-                        If you're looking to market and promote your content 
-                        aggressively, you're in safe hands. We have a strong 
-                        foothold over social media. With a reach of over 
-                        20 million people across these platforms, we make sure 
-                        your vision gets maximum exposure.
-                    </p>
-                </div>
-            </div>
-            <div class="whyus-card">
-                <div class="whyus-card-image">
-                    <img src="./images/whyus/four.png" alt="reason-4">
-                </div>
-                <div class="whyus-card-content">
-                    <p class="whyus-card-header">We Get The Job Done!</p>
-                    <p class="whyus-card-subtitle">
-                        Having a strong work ethic and discipline, our team works 
-                        day in and day out to make sure you get what you deserve 
-                        and every penny of yours is worth spending for. 
-                        Our team has some of the most skilled and experienced 
-                        personnel in the market who leave no stones unturned 
-                        to give you the best product possible.
-                    </p>
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="owl-carousel header-carousel">
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/banner/circle3.jpeg" alt="">
+                        <div class="owl-carousel-text">
+                            <p class="display-6 text-light mb-0 image-caption">Influencer Marketing</p>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/banner/circle6.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <p class="display-6 text-light mb-0 image-caption">Meme Marketing</p>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/banner/circle7.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <p class="display-6 text-light mb-0 image-caption">Content Amplification</p>
+                        </div>
+                    </div>
+                    <div class="owl-carousel-item position-relative">
+                        <img class="img-fluid" src="img/banner/circle5.jpg" alt="">
+                        <div class="owl-carousel-text">
+                            <p class="display-6 text-light mb-0 image-caption">Content Amplification</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <!-- footer section -->
-        <footer>
-            <div class="container-fluid footer">
-                <img src="./images/logo/idiotic.png" alt="logo" class="footer-logo">
-                <div class="welcome-text">
-                    come say hello
-                    <span>
-                        <img src="./images/icons/hand-wave.png">
-                    </span>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <!-- <img class="img-fluid rounded w-75 align-self-end" src="img/about-1.jpg" alt=""> -->
+                        <!-- <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="img/about-2.jpg" alt="" style="margin-top: -25%;"> -->
+                        <img class="img-fluid rounded w-75 align-self-end pt-3 pe-3 community-section-img" src="img/community/social-interaction.svg" alt="">
+                        <img class="img-fluid rounded w-50 bg-white community-section-img" src="img/community/social-influencer.svg" alt="" style="margin-top: -25%;">
+                    </div>
                 </div>
-                <div class="social-icons">
-                    <img src="./images/icons/facebook.svg" alt="facebook icon">
-                    <img src="./images/icons/instagram.svg" alt="instagram icon">
-                    <img src="./images/icons/linkedin.svg" alt="">
-                    <img src="./images/icons/twitter.svg" alt="">
-                    <img src="./images/icons/youtube.svg" alt="">
-                </div>
-                <div class="btn-group">
-                    <a href="./pages/brands.html" class="btn-link brand-btn">Join as a Brand</a>
-                    <a href="./pages/influencer.html" class="btn-link influencer-btn">Join as an Influencer</a>
-                </div>
-                <div class="shortcut-links">
-                    <a href="#" class="redirect-links">Home</a>
-                    <a href="#" class="redirect-links">About Us</a>
-                    <a href="#" class="redirect-links">Contact Us</a>
-                    <a href="#" class="redirect-links">Reviews</a>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Our Community</p>
+                    <!-- <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1> -->
+                    <h1 class="mb-4 text-uppercase">
+                        We hang with the Best
+                    </h1>
+                    <p>From great experience on a wallet app to an amazing fragrance, from streaming to tasty and silky treats, our ideas are everywhere. In order to constantly evolve ourselves, we make sure we keep pushing and 'Never Settle'.</p>
+                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
+                    <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-3" href="">Read More</a>
                 </div>
             </div>
-        </footer>
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="./scripts/main.js"></script>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Brands Showcase -->
+    <!-- <div class="container-xxl brands-showcase">
+        <div><img src="./img/brands/airtel.jpg" alt=""></div>
+        <div><img src="./img/brands/bingo.png" alt=""></div>
+        <div><img src="./img/brands/bulbultv.png" alt=""></div>
+        <div><img src="./img/brands/burgerking.png" alt=""></div>
+        <div><img src="./img/brands/dominos.png" alt=""></div>
+    </div> -->
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Our Process</p>
+                <h1 class="text-uppercase">how we get things done</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center mb-4">
+                            <img src="./img/process/1.png" class="w-75">
+                        </div>
+                        <h4 class="mb-3">Media</h4>
+                        <p class="mb-4">Scaling impact of your brand's ads across Top Channels and shows on YouTube.</p>
+                        <!-- <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4">
+                            <i class="fa fa-heartbeat text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Cardiology</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center mb-4">
+                            <img src="./img/process/2.png" class="w-75">
+                        </div>
+                        <h4 class="mb-3">Branded Campaigns</h4>
+                        <p class="mb-4">Collaborations achieving award winning results and exceeding expectations.</p>
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-x-ray text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Pulmonary</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center mb-4">
+                            <img src="./img/process/3.png" class="w-75">
+                        </div>
+                        <h4 class="mb-3">Digital Production</h4>
+                        <p class="mb-4">A killer Production team capable of producing 6-second spots to a premium series.</p>
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-brain text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Neurology</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-2 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center mb-4">
+                            <img src="./img/process/4.png" class="w-75">
+                        </div>
+                        <h4 class="mb-3">Influencer Strategy</h4>
+                        <p class="mb-4">Boosting your brand's message through a tight knit network of creators with a massive worldwide reach.</p>
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-wheelchair text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Orthopedics</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center mb-4">
+                            <img src="./img/process/5.png" class="w-75">
+                        </div>
+                        <h4 class="mb-3">Reporting & Analysis</h4>
+                        <p class="mb-4">Our team delivers customized Recap Reports containing all the relevant data and analytics you need.</p>
+                        <!-- <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-tooth text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Dental Surgery</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a> -->
+                    </div>
+                </div>
+                <!-- <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-light rounded h-100 p-5">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-white rounded-circle mb-4" style="width: 65px; height: 65px;">
+                            <i class="fa fa-vials text-primary fs-4"></i>
+                        </div>
+                        <h4 class="mb-3">Laboratory</h4>
+                        <p class="mb-4">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.</p>
+                        <a class="btn" href=""><i class="fa fa-plus text-primary me-3"></i>Read More</a>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid bg-primary overflow-hidden my-5 px-lg-0">
+        <div class="container feature px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="p-lg-5 ps-lg-0">
+                        <p class="d-inline-block border rounded-pill text-light py-1 px-4">Features</p>
+                        <h1 class="text-white mb-4">Why Choose Us</h1>
+                        <p class="text-white mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <div class="row g-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-user-md text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Experience</p>
+                                        <h5 class="text-white mb-0">Doctors</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-check text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Quality</p>
+                                        <h5 class="text-white mb-0">Services</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-comment-medical text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">Positive</p>
+                                        <h5 class="text-white mb-0">Consultation</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-light" style="width: 55px; height: 55px;">
+                                        <i class="fa fa-headphones text-primary"></i>
+                                    </div>
+                                    <div class="ms-4">
+                                        <p class="text-white mb-2">24 Hours</p>
+                                        <h5 class="text-white mb-0">Support</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+                <h1>Our Experience Doctors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>Doctor Name</h5>
+                            <p class="text-primary">Department</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Appointment Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
+                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Call Us Now</p>
+                            <h5 class="mb-0">+012 345 6789</h5>
+                        </div>
+                    </div>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Mail Us Now</p>
+                            <h5 class="mb-0">info@example.com</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Choose Doctor</option>
+                                        <option value="1">Doctor 1</option>
+                                        <option value="2">Doctor 2</option>
+                                        <option value="3">Doctor 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0" rows="5" placeholder="Describe your problem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Appointment</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Appointment End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block border rounded-pill py-1 px-4">Testimonial</p>
+                <h1>What Say Our Patients!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Patient Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Patient Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <h5 class="mb-1">Patient Name</h5>
+                        <span class="fst-italic">Profession</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social rounded-circle" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Services</h5>
+                    <a class="btn btn-link" href="">Cardiology</a>
+                    <a class="btn btn-link" href="">Pulmonary</a>
+                    <a class="btn btn-link" href="">Neurology</a>
+                    <a class="btn btn-link" href="">Orthopedics</a>
+                    <a class="btn btn-link" href="">Laboratory</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Our Services</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">Support</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+                        </br>
+                        Distributed By <a class="border-bottom" href="https://themewagon.com" target="_blank">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="lib/slick/slick.min.js" type="text/javascript"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
+
 </html>
