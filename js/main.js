@@ -116,7 +116,7 @@ const socialMediaChannels = [
 ];
 let dynamicTextCounter = 0;
 let printingWord = "";
-const letter_typing_speed = 500;
+const letter_typing_speed = 300;
 
 document.addEventListener('DOMContentLoaded', pageLoadComplete);
 
@@ -176,4 +176,23 @@ function createBrandsShowcaseSlider(){
         }]
     };
     $(".brands-showcase").slick(slick_properties);
+}
+
+function formModeSelected(){
+    let selectMenu = document.getElementById('form-mode');
+    let detail_container = document.getElementById('brand-detail');
+    let influencer_profile_link = document.getElementById('influencer-profile-link');
+    let influencer_channel_name = document.getElementById('influencer-channel-name');
+    if(selectMenu.value == '1'){
+        // brand
+        detail_container.classList.remove('d-none');
+        influencer_profile_link.classList.add('d-none');
+        influencer_channel_name.classList.add('d-none');
+    }
+    else{
+        // influencer
+        detail_container.classList.add('d-none');
+        influencer_profile_link.classList.remove('d-none');
+        influencer_channel_name.classList.remove('d-none');
+    }
 }
