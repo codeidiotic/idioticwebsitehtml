@@ -152,10 +152,28 @@ function typeWord(){
 function createBrandsShowcaseSlider(){
     let slick_properties = {
         autoplay: true,
-        autoplaySpeed: 5000,
-        slidesToShow: 6,
-        slidesToScroll: 3,
-        loop: true
+        centerMode: true,
+        infinite: true,
+        centerPadding: '30px',
+        slidesToShow: 3,
+        speed: 500,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+        }]
     };
-    // $(".brands-showcase").slick(slick_properties);
+    $(".brands-showcase").slick(slick_properties);
 }
