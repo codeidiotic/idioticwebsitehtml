@@ -1,14 +1,8 @@
 /********** Template CSS **********/
 :root {
-    /* --primary: #0463FA; */
     --light: #EFF5FF;
-    /* --dark: #1B2C51; */
-
     --primary: #00afff;
     --dark: #1b3c6e;
-
-    /* --primary: #1b3c63;
-    --dark: #00afff; */
 }
 
 .fw-medium {
@@ -23,6 +17,14 @@
     font-weight: 900 !important;
 }
 
+.fc-primary{
+    color: var(--primary);
+}
+
+.bground-light{
+    background: linear-gradient(70deg, rgb(213 223 235 / 85%), rgb(227 238 253 / 95%));
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -30,7 +32,6 @@
     bottom: 45px;
     z-index: 99;
 }
-
 
 /*** Spinner ***/
 #spinner {
@@ -88,6 +89,41 @@
     font-weight: normal;
 }
 
+.btn-primary-bg{
+    background-color: var(--primary);
+    border: inset 2px transparent;
+}
+
+.btn-dark-bg{
+    background-color: var(--dark);
+    border: inset 2px transparent;
+}
+
+.btn-primary-bg:hover, .btn-dark-bg:hover{
+    filter: brightness(0.9);
+}
+
+.btn-primary-bg-outline{
+    border: inset 2px var(--light);
+    color: var(--light);
+    transition: all 400ms ease-in-out;
+}
+
+.btn-primary-bg-outline:hover{
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn-dark-bg-outline{
+    border: solid 2px var(--light);
+    transition: all 400ms ease-in-out;
+}
+
+.btn-dark-bg-outline:hover{
+    border-color: var(--dark);
+    color: var(--dark);
+}
+/*** Button ***/
 
 /*** Navbar ***/
 .navbar .dropdown-toggle::after {
@@ -100,13 +136,14 @@
 }
 
 .navbar .navbar-nav .nav-link {
-    margin-right: 30px;
+    margin-right: 2.5rem;
     padding: 25px 0;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     outline: none;
+    white-space: nowrap;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -125,9 +162,13 @@
     }
 }
 
-.navbar .navbar-brand,
+/* .navbar .navbar-brand,
 .navbar a.btn {
     height: 75px;
+} */
+
+.navbar .navbar-brand img{
+    width: 65%;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -169,57 +210,14 @@
     background-color: var(--dark);
 }
 
-.btn-primary-bg{
-    background-color: var(--primary);
-    border: inset 2px transparent;
-}
-
-.btn-dark-bg{
-    background-color: var(--dark);
-    border: inset 2px transparent;
-}
-
-.btn-primary-bg:hover, .btn-dark-bg:hover{
-    filter: brightness(0.9);
-}
-
-.btn-primary-bg-outline{
-    border: inset 2px var(--light);
-    color: var(--light);
-    transition: all 400ms ease-in-out;
-}
-
-.btn-primary-bg-outline:hover{
-    border-color: var(--primary);
-    color: var(--primary);
-}
-
-.btn-dark-bg-outline{
-    border: solid 2px var(--light);
-    transition: all 400ms ease-in-out;
-}
-
-.btn-dark-bg-outline:hover{
-    border-color: var(--dark);
-    color: var(--dark);
-}
-
-.header-carousel{
-    height: calc(100vh - 4rem);
-}
-
 .header-carousel .owl-stage-outer{
     height: 100%;
 }
 
 .header-carousel .owl-carousel-text {
     position: absolute;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* padding: 3rem; */
     left: 0;
     top: 0;
-    /* bottom: calc(100vh - 32.5rem); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,6 +317,16 @@
 .community-section-img{
     animation: bounce;
     animation-duration: 2s;
+}
+
+.header-carousel{
+    height: calc(100vh - 4rem);
+}
+
+@media (max-width: 576px){
+    .header-carousel{
+        height: auto;
+    }
 }
 
 /*** Service ***/
@@ -736,4 +744,12 @@
 
 .whyus-card-subtitle{
     opacity: 0.9;
+}
+
+/* Influencer Page CSS */
+.influencer-pulse-animation{
+    animation: pulse;
+    animation-duration: 3500ms;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
 }

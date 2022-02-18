@@ -132,7 +132,6 @@ function changeRunningText(){
     dynamicTextEle.innerText = "";
     printingWord = socialMediaChannels[dynamicTextCounter]['name'];
     dynamicTextEle.className = 'fw-bold ' + socialMediaChannels[dynamicTextCounter]['className'];
-    // dynamicTextEle.className = 'fw-bold text-primary';
     typeWord();
     dynamicTextCounter++;
     if(dynamicTextCounter == socialMediaChannels.length){
@@ -158,19 +157,17 @@ function createBrandsShowcaseSlider(){
         slidesToShow: 3,
         speed: 500,
         responsive: [{
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
                 arrows: false,
-                centerMode: true,
                 centerPadding: '40px',
-                slidesToShow: 3
+                slidesToShow: 2
             }
         }, {
             breakpoint: 480,
             settings: {
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
+                centerPadding: '10px',
                 slidesToShow: 1
             }
         }]
