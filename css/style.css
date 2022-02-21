@@ -747,9 +747,73 @@
 }
 
 /* Influencer Page CSS */
-.influencer-pulse-animation{
-    animation: pulse;
-    animation-duration: 3500ms;
-    animation-delay: 500ms;
-    animation-iteration-count: infinite;
+.network-card .team-item .team-text{
+    height: 4.5rem;
+}
+
+.network-card:hover .team-item .team-text{
+    height: 11.5rem;
+}
+
+.network-card .team-item .team-social{
+    padding-bottom: 1rem;
+}
+
+.networks-card-container .slick-prev{
+    left: -2%;
+    top: -10%;
+}
+
+.networks-card-container .slick-next{
+    right: -2%;
+    top: -10%;
+}
+
+/* Influencer Page Signup Page */
+.signup-form{
+    padding: 0;
+    max-width: 50rem;
+    min-height: 26rem;
+    background: #0f223e;
+    display: flex;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.join-text{
+    font-size: 1.25rem;
+    color: #d3e5ff;
+}
+
+.left-section-signup-form{
+    width: 50%;
+    padding: 1.5rem 1rem;
+}
+
+.left-section-signup-form input{
+    margin-bottom: 1rem;
+}
+
+.left-section-signup-form input::placeholder{
+    font-size: 0.75rem;
+}
+
+.right-section-signup-form{
+    background-image: url("../img/influencers/model.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top -4.5rem left 0;
+    width: 50%;
+    border-radius: 0 10px 10px 0;
+}
+
+@media (min-width: 0) and (max-width: 576px){
+    .left-section-signup-form{
+        width: 100%;
+    }
+
+    .right-section-signup-form{
+        display: none;
+    }
 }

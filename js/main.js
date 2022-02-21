@@ -125,6 +125,10 @@ function pageLoadComplete(){
         changeRunningText();
         createBrandsShowcaseSlider();
     }
+
+    if(window.location.pathname.indexOf("influencer") > -1){
+        createInfluencerSlider();
+    }
 }
 
 function changeRunningText(){
@@ -192,4 +196,16 @@ function formModeSelected(){
         influencer_profile_link.classList.remove('d-none');
         influencer_channel_name.classList.remove('d-none');
     }
+}
+
+function createInfluencerSlider(){
+    let slider_properties = {
+        autoplay: true,
+        autoplaySpeed: 2000,
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+        // arrows: false
+    };
+    $(".networks-card-container").slick(slider_properties);
 }
