@@ -99,19 +99,19 @@
 const socialMediaChannels = [
     {
         'name': 'Facebook',
-        'className': 'text-primary'
+        'className': 'text-light'
     },
     {
         'name': 'Instagram',
-        'className': 'text-primary'
+        'className': 'text-light'
     },
     {
         'name': 'Twitter',
-        'className': 'text-primary'
+        'className': 'text-light'
     },
     {
         'name': 'Youtube',
-        'className': 'text-danger'
+        'className': 'text-light'
     }
 ];
 let dynamicTextCounter = 0;
@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', pageLoadComplete);
 
 function pageLoadComplete(){
     if(window.location.pathname.indexOf("index") > -1){
-        changeRunningText();
-        createBrandsShowcaseSlider();
+        // changeRunningText();
+        // createBrandsShowcaseSlider();
     }
 
     if(window.location.pathname.indexOf("influencer") > -1){
@@ -133,15 +133,15 @@ function pageLoadComplete(){
 
 function changeRunningText(){
     let dynamicTextEle = document.getElementById("dynamicText");
-    dynamicTextEle.innerText = "";
+    dynamicTextEle.innerText = socialMediaChannels[dynamicTextCounter]['name'];
     printingWord = socialMediaChannels[dynamicTextCounter]['name'];
-    dynamicTextEle.className = 'fw-bold ' + socialMediaChannels[dynamicTextCounter]['className'];
-    typeWord();
+    // dynamicTextEle.className = 'fw-bold ' + socialMediaChannels[dynamicTextCounter]['className'];
+    // typeWord();
     dynamicTextCounter++;
     if(dynamicTextCounter == socialMediaChannels.length){
         dynamicTextCounter = 0;
     }
-    setTimeout(changeRunningText, (printingWord.length * letter_typing_speed + letter_typing_speed));
+    setTimeout(changeRunningText, 3000);
 }
 
 function typeWord(){
@@ -204,8 +204,20 @@ function createInfluencerSlider(){
         autoplaySpeed: 2000,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1
-        // arrows: false
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 2
+            }
+        }, {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                slidesToShow: 1
+            }
+        }]
     };
     $(".networks-card-container").slick(slider_properties);
 }

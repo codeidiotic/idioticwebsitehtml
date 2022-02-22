@@ -21,6 +21,14 @@
     color: var(--primary);
 }
 
+.fs-banner{
+    font-size: 2.5rem;
+}
+
+.fs-small{
+    font-size: 0.8rem;
+}
+
 .bground-light{
     background: linear-gradient(70deg, rgb(213 223 235 / 85%), rgb(227 238 253 / 95%));
 }
@@ -122,6 +130,23 @@
 .btn-dark-bg-outline:hover{
     border-color: var(--dark);
     color: var(--dark);
+}
+
+.banner-btn{
+    display: inline-block;
+    padding: 1rem 1.75rem 1rem 2.5rem;
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+    border-radius: 6px;
+    transition: all 300ms;
+}
+
+.banner-btn:hover{
+    color: var(--dark);
+    box-shadow: 0px 0px 0.5rem 0px rgb(27 60 110 / 70%);
+    transform: translateY(-10px);
 }
 /*** Button ***/
 
@@ -384,35 +409,39 @@
 
 
 /*** Team ***/
+.team-item{
+    box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 15%);
+}
+
 .team-item img {
     position: relative;
     top: 0;
     transition: .5s;
 }
 
-.team-item:hover img {
+/* .team-item:hover img {
     top: -30px;
-}
+} */
 
 .team-item .team-text {
     position: relative;
-    height: 100px;
+    height: auto;
     transition: .5s;
 }
 
-.team-item:hover .team-text {
+/* .team-item:hover .team-text {
     margin-top: -60px;
     height: 160px;
-}
+} */
 
 .team-item .team-text .team-social {
-    opacity: 0;
+    opacity: 1;
     transition: .5s;
 }
 
-.team-item:hover .team-text .team-social {
+/* .team-item:hover .team-text .team-social {
     opacity: 1;
-}
+} */
 
 .team-item .team-social .btn {
     display: inline-flex;
@@ -746,6 +775,58 @@
     opacity: 0.9;
 }
 
+.case-study-card-container{
+    border: solid 1px var(--dark);
+    max-width: 22rem;
+    border-radius: 0.75rem;
+    padding: 1rem 0.5rem 2.5rem 0.5rem;
+    box-shadow: 1.05rem 1.05rem 0.5rem 0px rgb(0 0 0 / 15%);
+}
+
+.brands-insights-container{
+    border-top: solid 1px #cecece;
+    border-bottom: solid 1px #cecece;
+}
+
+.bottom-border{
+    border-bottom: solid 1px #cecece;
+}
+
+.left-border{
+    border-left: solid 1px #cecece;
+}
+
+.impressions-value-txt{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.brand-img-container{
+    max-width: 9rem;
+    height: 25%;
+}
+
+.brand-img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+.brand-objective-container{
+    height: 23%;
+}
+
+.brand-card-icon{
+    width: 22%;
+    margin-bottom: 0.75rem;
+}
+
+.brand-card-txt{
+    font-size: 1rem;
+}
+
 /* Influencer Page CSS */
 .network-card .team-item .team-text{
     height: 4.5rem;
@@ -816,4 +897,15 @@
     .right-section-signup-form{
         display: none;
     }
+}
+
+.header{
+    min-height: 35rem;
+    background: var(--light) url("../img/banner/influencer_marketing_factory.webp");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
