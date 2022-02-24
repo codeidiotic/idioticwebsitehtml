@@ -654,52 +654,54 @@
     object-position: top;
 }
 
-.slick-slide > div{
+/* .slick-slide > div{
     transform: scale(.75);
     transition: transform 400ms cubic-bezier(.4, 0, .2, 1);
+} */
+
+.slick-slide > div{
+    margin: 0rem 0.9rem 0rem 0rem;
 }
 
-.slick-center{
+/* .slick-center{
     box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 30%);
 }
 
 .slick-center > div {
     transform: scale(1);
-}
+} */
 
 .slick-prev,
 .slick-next {
     font-size: 0;
+    width: 0;
+    height: 0;
     position: absolute;
-    bottom: 20px;
     color: var(--primary);
     border: 0;
     background: none;
     z-index: 1;
-    top: 10%;
+    top: 45%;
 }
 
 .slick-prev {
-    left: 20px;
+    left: 0px;
+}
+
+.slick-next {
+    right: 0px;
 }
 
 .slick-prev::after, .slick-next::after{
     display: inline-block;
-    padding-right: 3px;
-    vertical-align: middle;
     font-weight: 900;
     font-family: "Font Awesome 5 Free";
     font-size: 2.25rem;
-    padding-left: 0.5rem;
+    vertical-align: middle;
 }
 
 .slick-prev:after {
     content: "\f053";
-}
-
-.slick-next {
-    right: 20px;
-    text-align: right;
 }
 
 .slick-next:after {
@@ -709,7 +711,7 @@
 
 .slick-prev:hover:after,
 .slick-next:hover:after {
-    color: #626262;
+    color: var(--dark);
 }
 
 .brand-image-container{
@@ -924,7 +926,13 @@
 
 .work-done-card-container:hover{
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 25%);
-    background: rgb(245, 245, 245 / 100%);
+    /* background: rgb(240 248 255); */
+    background: var(--primary);
+    color: var(--light);
+}
+
+.work-done-card-container:hover .work-done-card-title{
+    color: var(--light);
 }
 
 .work-done-img-container{
@@ -945,6 +953,7 @@
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--primary);
+    transition: color 350ms ease-in;
 }
 
 .work-done-card-content{
@@ -1049,4 +1058,15 @@
 .signup-form-input{
     font-size: 0.85rem;
     padding: 0.35rem;
+}
+
+.influencer-card-image-container{
+    height: 18rem;
+}
+
+.influencer-card-image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
 }

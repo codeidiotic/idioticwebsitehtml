@@ -124,6 +124,7 @@ function pageLoadComplete(){
     if(window.location.pathname.indexOf("index") > -1){
         // changeRunningText();
         // createBrandsShowcaseSlider();
+        createInfluencerSlider();
     }
 
     if(window.location.pathname.indexOf("influencer") > -1){
@@ -201,42 +202,63 @@ function formModeSelected(){
 function createInfluencerSlider(){
     let slider_properties = {
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 3000,
         infinite: true,
         slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [{
+        slidesToScroll: 4,
+        responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+            }
+        },
+        {
             breakpoint: 768,
             settings: {
-                arrows: false,
-                slidesToShow: 2
+                slidesToShow: 2,
+                slidesToScroll: 2
             }
-        }, {
-            breakpoint: 480,
+        }, 
+        {
+            breakpoint: 510,
             settings: {
                 arrows: false,
-                slidesToShow: 1
+                slidesToShow: 1,
+                slidesToScroll: 1
             }
         }]
     };
-    $(".networks-card-container").slick(slider_properties);
+    // $(".networks-card-container").slick(slider_properties);
+    $(".influencers-showcase").slick(slider_properties);
 }
 
 function campaignDelivarableChecked(){
     let campaign_deliverable = document.querySelector('input[name="campaign_deliverable"]:checked').value;
     let campaign_textarea = document.getElementById("campaign_description");
-    
+    console.log(campaign_deliverable);
     let message = "Let the influencer know what kind of promotion that you want to engage them for.";
     switch(campaign_deliverable){
         case "option1":
+            console.log('in option1');
             message = "I want Influencer to do 1 Instagram Post and 1 Twitter Post for PQR Brand";
+            campaign_textarea.value = message;
             break;
         case "option2":
+            console.log('in option2');
             message = "I want Influencer to Re-Share the content posted by on their Facebook Page";
+            campaign_textarea.value = message;
             break;
         case "option3":
+            console.log('in option3');
             message = "I want Influencer to come and watch showroom opening and go live on Instagram";
+            campaign_textarea.value = message;
+            break;
+        case "option4":
+            console.log('in option4');
+            campaign_textarea.value = "";
+            campaign_textarea.placeholder = message;
             break;
     }
-    campaign_textarea.placeholder = message;
 }
