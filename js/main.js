@@ -221,3 +221,22 @@ function createInfluencerSlider(){
     };
     $(".networks-card-container").slick(slider_properties);
 }
+
+function campaignDelivarableChecked(){
+    let campaign_deliverable = document.querySelector('input[name="campaign_deliverable"]:checked').value;
+    let campaign_textarea = document.getElementById("campaign_description");
+    
+    let message = "Let the influencer know what kind of promotion that you want to engage them for.";
+    switch(campaign_deliverable){
+        case "option1":
+            message = "I want Influencer to do 1 Instagram Post and 1 Twitter Post for PQR Brand";
+            break;
+        case "option2":
+            message = "I want Influencer to Re-Share the content posted by on their Facebook Page";
+            break;
+        case "option3":
+            message = "I want Influencer to come and watch showroom opening and go live on Instagram";
+            break;
+    }
+    campaign_textarea.placeholder = message;
+}

@@ -949,6 +949,7 @@
 
 .work-done-card-content{
     line-height: 1.75rem;
+    max-height: 5rem;
 }
 
 /* connect form modal design */
@@ -1022,5 +1023,30 @@
 
 .social-media-icons p{
     font-family: 'Quicksand', sans-serif;
+    color: var(--dark);
+    /* color: #1B2C51; */
 }
 
+.social-media-icons p:hover{
+    color: var(--primary);
+}
+
+.signup-form-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form-lbl{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.signup-form-group input::placeholder, textarea::placeholder{
+    font-size: 0.75rem;
+    opacity: 0.8;
+}
+
+.signup-form-input{
+    font-size: 0.85rem;
+    padding: 0.35rem;
+}
