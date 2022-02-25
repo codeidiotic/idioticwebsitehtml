@@ -34,6 +34,10 @@
     opacity: 0.75;
 }
 
+.ff-quicksand{
+    font-family: 'Quicksand', sans-serif;
+}
+
 .bground-light{
     background: linear-gradient(70deg, rgb(213 223 235 / 85%), rgb(227 238 253 / 95%));
 }
@@ -1048,6 +1052,7 @@
 .signup-form-lbl{
     font-size: 0.8rem;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .signup-form-group input::placeholder, textarea::placeholder{
@@ -1069,4 +1074,61 @@
     height: 100%;
     object-fit: cover;
     object-position: top;
+}
+
+/* Contact us page styles */
+.contact-us-header{
+    min-height: 35rem;
+    background: var(--dark) url("../img/banner/contact-us-2.jpg");
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;
+    /* border-bottom-right-radius: 15rem; */
+}
+
+.contactus-banner-text{
+    font-size: 1.75rem;
+    width: 40vw;
+    text-transform: capitalize;
+}
+
+.contact-signup-brands .brand-image-container img{
+    filter: grayscale(0);
+}
+
+.contact-us-card{
+    flex-basis: 100%;
+    color: var(--dark);
+    padding: 2rem 1rem;
+    font-family: 'Quicksand', sans-serif;
+    box-shadow: 0px 0px 10px 0px rgb(27 60 110 / 25%);
+    transition: transform 350ms ease-in;
+}
+
+.contact-us-card:hover{
+    transform: scale(1.05);
+}
+
+.contact-us-icons{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 1rem auto;
+    background: #e9f8ff;
+}
+
+.contact-us-card-title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.contact-us-card-content{
+    font-size: 1.1rem;
+    text-align: center;
+    line-height: 1.85rem;
 }

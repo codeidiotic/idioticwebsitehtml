@@ -230,8 +230,13 @@ function createInfluencerSlider(){
             }
         }]
     };
-    // $(".networks-card-container").slick(slider_properties);
-    $(".influencers-showcase").slick(slider_properties);
+
+    if(window.location.pathname.indexOf("index") > -1){
+        $(".influencers-showcase").slick(slider_properties);
+    }
+    else{
+        $(".networks-card-container").slick(slider_properties);
+    }
 }
 
 function campaignDelivarableChecked(){
