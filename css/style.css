@@ -841,16 +841,16 @@
 
 /* Influencer Page CSS */
 .network-card .team-item .team-text{
-    height: 4.5rem;
-}
-
-.network-card:hover .team-item .team-text{
     height: 11.5rem;
 }
 
-.network-card .team-item .team-social{
+/* .network-card:hover .team-item .team-text{
+    height: 11.5rem;
+} */
+
+/* .network-card .team-item .team-social{
     padding-bottom: 1rem;
-}
+} */
 
 .networks-card-container .slick-prev{
     left: -2%;
@@ -1059,6 +1059,7 @@
 .signup-form-group input::placeholder, textarea::placeholder{
     font-size: 0.75rem;
     opacity: 0.8;
+    text-transform: capitalize;
 }
 
 .signup-form-input{
@@ -1161,13 +1162,14 @@
     filter: grayscale(0);
 }
 
-.network-cards-container{
-    background: url("../img/banner/boxes.jpg");
+/* .network-cards-container{
     min-height: 20rem;
-}
+    padding: 0 1rem;
+} */
 
 .influencers-category-item{
     list-style: none;
+    margin-bottom: 1rem;
 }
 
 .influencers-category-item a{
@@ -1184,4 +1186,17 @@
 
 .influencers-category-item a.influencer-category-active{
     color: var(--primary);
+    border: solid 2px;
+}
+
+.networks-card-container .slick-slide > div{
+    margin: 0 0.75rem;
+}
+
+.influencer-signup-form{
+    width: 50%;
+    margin: 0 auto;
+    gap: 1rem;
+    box-shadow: 0 0 3px 2px rgba(0, 174, 255, 0.37);
+    padding: 1rem 3rem 2.5rem 3rem;
 }

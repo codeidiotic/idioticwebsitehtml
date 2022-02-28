@@ -243,6 +243,8 @@ function createInfluencerSlider(){
         $(".influencers-showcase").slick(slider_properties);
     }
     else{
+        slider_properties.arrows = false;
+        slider_properties.autoplaySpeed = 1000;
         $(".networks-card-container").slick(slider_properties);
     }
 }
