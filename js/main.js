@@ -123,12 +123,12 @@ document.addEventListener('DOMContentLoaded', pageLoadComplete);
 function pageLoadComplete(){
     if(window.location.pathname.indexOf("index") > -1){
         // changeRunningText();
-        // createBrandsShowcaseSlider();
         createInfluencerSlider();
     }
 
     if(window.location.pathname.indexOf("influencer") > -1){
         createInfluencerSlider();
+        createBrandsShowcaseSlider();
     }
 }
 
@@ -156,28 +156,36 @@ function typeWord(){
 function createBrandsShowcaseSlider(){
     let slick_properties = {
         autoplay: true,
-        centerMode: true,
         infinite: true,
-        centerPadding: '30px',
-        slidesToShow: 3,
+        slidesToShow: 6,
+        slidesToScroll: 1,
         speed: 500,
-        responsive: [{
-            breakpoint: 769,
-            settings: {
-                arrows: false,
-                centerPadding: '40px',
-                slidesToShow: 2
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
             }
-        }, {
-            breakpoint: 480,
-            settings: {
-                arrows: false,
-                centerPadding: '10px',
-                slidesToShow: 1
-            }
-        }]
+        ]
     };
-    $(".brands-showcase").slick(slick_properties);
+    $(".influencers-brands-showcase-slider").slick(slick_properties);
 }
 
 function formModeSelected(){
