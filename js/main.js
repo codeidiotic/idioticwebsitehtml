@@ -252,26 +252,21 @@ function createInfluencerSlider(){
 function campaignDelivarableChecked(){
     let campaign_deliverable = document.querySelector('input[name="campaign_deliverable"]:checked').value;
     let campaign_textarea = document.getElementById("campaign_description");
-    console.log(campaign_deliverable);
     let message = "Let the influencer know what kind of promotion that you want to engage them for.";
     switch(campaign_deliverable){
         case "option1":
-            console.log('in option1');
             message = "I want Influencer to do 1 Instagram Post and 1 Twitter Post for PQR Brand";
             campaign_textarea.value = message;
             break;
         case "option2":
-            console.log('in option2');
             message = "I want Influencer to Re-Share the content posted by on their Facebook Page";
             campaign_textarea.value = message;
             break;
         case "option3":
-            console.log('in option3');
             message = "I want Influencer to come and watch showroom opening and go live on Instagram";
             campaign_textarea.value = message;
             break;
         case "option4":
-            console.log('in option4');
             campaign_textarea.value = "";
             campaign_textarea.placeholder = message;
             break;

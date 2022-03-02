@@ -1200,3 +1200,13 @@
     box-shadow: 0 0 3px 2px rgba(0, 174, 255, 0.37);
     padding: 1rem 3rem 2.5rem 3rem;
 }
+
+.accordion-button:not(.collapsed){
+    color: var(--primary);
+    background-color: #f6f6f6;
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../img/icons/down-arrow.svg");
+}
