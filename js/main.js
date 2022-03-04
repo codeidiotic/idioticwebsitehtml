@@ -130,6 +130,10 @@ function pageLoadComplete(){
         createInfluencerSlider();
         createBrandsShowcaseSlider();
     }
+
+    if(window.location.pathname.indexOf("brands") > -1){
+        brandsPageTestimonial();
+    }
 }
 
 function changeRunningText(){
@@ -271,4 +275,53 @@ function campaignDelivarableChecked(){
             campaign_textarea.placeholder = message;
             break;
     }
+}
+
+function brandsPageTestimonial(){
+    $(".testimonials-container").owlCarousel({
+        autoplay: true,
+        smartSpeed: 600,
+        dots: true,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            }
+        }
+    });
+
+    // $(".casestudies-container").owlCarousel({
+    //     autoplay: true,
+    //     smartSpeed: 600,
+    //     center: true,
+    //     loop: true,
+    //     responsive: {
+    //         0:{
+    //             items:1
+    //         },
+    //         768:{
+    //             items:1
+    //         }
+    //     }
+    // });
+
+    $(".casestudies-container").slick({
+        autoplay: true,
+        autoplaySpeed: 3500,
+        infinite: true,
+        arrows: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 576,
+                settings: {
+                    arrows: false
+                }
+            }
+        ]
+    });
 }
