@@ -134,6 +134,10 @@ function pageLoadComplete(){
     if(window.location.pathname.indexOf("brands") > -1){
         brandsPageTestimonial();
     }
+
+    if(window.location.pathname.indexOf("contact") > -1){
+        toggleAddress('gurugram');
+    }
 }
 
 function changeRunningText(){
@@ -293,21 +297,6 @@ function brandsPageTestimonial(){
         }
     });
 
-    // $(".casestudies-container").owlCarousel({
-    //     autoplay: true,
-    //     smartSpeed: 600,
-    //     center: true,
-    //     loop: true,
-    //     responsive: {
-    //         0:{
-    //             items:1
-    //         },
-    //         768:{
-    //             items:1
-    //         }
-    //     }
-    // });
-
     $(".casestudies-container").slick({
         autoplay: true,
         autoplaySpeed: 3500,
@@ -324,4 +313,18 @@ function brandsPageTestimonial(){
             }
         ]
     });
+}
+
+function toggleAddress(cityname){
+    let gurgaon = document.getElementById("gurgaonAddress");
+    let mumbai = document.getElementById("mumbaiAddress");
+    if(cityname === "gurugram"){
+        $(gurgaon).show();
+        $(mumbai).hide();
+    }
+
+    if(cityname === "mumbai"){
+        $(gurgaon).hide();
+        $(mumbai).show();
+    }
 }
