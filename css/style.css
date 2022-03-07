@@ -1108,8 +1108,10 @@
     min-height: 35rem;
     background: var(--dark) url("../img/banner/contact-us-2.jpg");
     background-repeat: no-repeat;
-    background-position-x: left;
-    background-position-y: center;
+    /* background-position-x: left; */
+    /* background-position-y: center; */
+    background-position: center;
+    background-size: cover;
     /* border-bottom-right-radius: 15rem; */
 }
 
