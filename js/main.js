@@ -297,22 +297,44 @@ function brandsPageTestimonial(){
         }
     });
 
-    $(".casestudies-container").slick({
-        autoplay: true,
-        autoplaySpeed: 3500,
-        infinite: true,
-        arrows: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 576,
-                settings: {
-                    arrows: false
-                }
-            }
-        ]
-    });
+    // $(".casestudies-container").slick({
+    //     autoplay: true,
+    //     autoplaySpeed: 3500,
+    //     infinite: true,
+    //     arrows: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     responsive: [
+    //         {
+    //             breakpoint: 576,
+    //             settings: {
+    //                 arrows: false
+    //             }
+    //         }
+    //     ]
+    // });
+}
+
+function viewMoreCaseStudies(){
+    let case_studies_rows = document.getElementsByClassName("brands-page-casestudies");
+    console.log(case_studies_rows);
+    for(let i = 0; i < case_studies_rows.length; i++){
+        if(case_studies_rows[i].classList.contains('hide-element')){
+            case_studies_rows[i].classList.remove('hide-element');
+            case_studies_rows[i].scrollIntoView({
+                behavior: "auto"
+            });
+            
+            setTimeout(() => {
+                document.documentElement.scrollBy({
+                    behavior: "smooth",
+                    top: -80,
+                    left: 0
+                });
+            }, 1000);
+            break;
+        }
+    }
 }
 
 function foundersCarousel(){

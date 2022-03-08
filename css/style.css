@@ -804,8 +804,21 @@
     opacity: 0.9;
 }
 
+.brands-page-casestudies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    transition: all 500ms ease-in-out;
+}
+
+.hide-element{
+    display: none;
+}
+
 .case-study-card-container{
-    border: solid 1px var(--dark);
+    /* border: solid 1px var(--dark); */
+    background: #FFFFFF;
     max-width: 22rem;
     border-radius: 0.75rem;
     padding: 1rem 0.5rem 2.5rem 0.5rem;
@@ -941,9 +954,10 @@
 
 .work-done-card-container{
     padding: 2rem 0.5rem 2rem 1.5rem;
-    background: rgb(245 245 245 / 90%);
-    -webkit-transition: all 350ms ease-in;
-    transition: all 350ms ease-in;
+    /* background: rgb(245 245 245 / 50%); */
+    -webkit-transition: all 150ms ease-in;
+    transition: all 150ms ease-in;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
 }
 
 .work-done-card-container:hover{
@@ -953,7 +967,8 @@
     color: var(--light);
 }
 
-.work-done-card-container:hover .work-done-card-title{
+.work-done-card-container:hover .work-done-card-title, 
+.work-done-card-container:hover .work-done-card-icon{
     color: var(--light);
 }
 
@@ -973,7 +988,7 @@
 
 .work-done-card-title{
     font-size: 1.1rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--primary);
     transition: color 350ms ease-in;
 }
@@ -1421,12 +1436,16 @@
 }
 
 .founder-card{
-    min-height: 66rem;
-    transition: transform 450ms;
+    /* min-height: 35rem; */
+    transition: all 250ms;
 }
 
-.founder-card:hover{
+/* .founder-card:hover{
     transform: scale(1.05);
+} */
+
+.founder-card:hover .founder-card-img{
+    transform: scale(1.03);
 }
 
 .card-icon img{
@@ -1437,4 +1456,15 @@
     min-height: 19rem;
     border-color: transparent;
     box-shadow: 0 0 5px 0px rgb(0 0 0 / 15%);
+}
+
+.brands-page-casestudies .case-study-card-container{
+    max-width: 20rem;
+}
+
+.founder-card-img{
+    max-height: 20rem;
+    object-fit: cover;
+    object-position: top;
+    transition: all 350ms ease-out;
 }
