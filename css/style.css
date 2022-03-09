@@ -1468,3 +1468,22 @@
     object-position: top;
     transition: all 350ms ease-out;
 }
+
+.case-study-detail .modal-fullscreen{
+    width: 75%;
+    margin-right: auto;
+}
+
+.case-study-detail .slick-list{
+    max-height: calc(100vh - 8rem);
+    border-radius: 10px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.case-study-detail .slick-slide{
+    object-fit: cover;
+}
+
+.box-shadow-dark{
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.25);
+}

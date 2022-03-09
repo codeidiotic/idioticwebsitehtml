@@ -255,6 +255,12 @@ function createInfluencerSlider(){
         slider_properties.autoplaySpeed = 1000;
         $(".networks-card-container").slick(slider_properties);
     }
+
+    $(".case-study-detail-showcase").slick({
+        autoplay: true,
+        autoplaySpeed: 500,
+        arrows: false
+    });
 }
 
 function campaignDelivarableChecked(){
@@ -327,7 +333,7 @@ function viewMoreCaseStudies(){
             
             setTimeout(() => {
                 document.documentElement.scrollBy({
-                    behavior: "smooth",
+                    behavior: "auto",
                     top: -80,
                     left: 0
                 });
@@ -355,4 +361,21 @@ function foundersCarousel(){
             }
         ]
     });
+}
+
+function validatePhoneNumber(event){
+    console.log(event);
+    if((event.which >= 48 && event.which <= 57) || (event.which >= 96 && event.which <= 105)){
+        return true;
+    }
+    return false;
+}
+
+function isNumber(evt) {
+    evt = (evt) ? evt : window.event;
+    var charCode = (evt.which) ? evt.which : evt.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+        return false;
+    }
+    return true;
 }

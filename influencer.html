@@ -341,36 +341,24 @@
             </div>
             <div class="wow fadeInUp" data-wow-delay="0.2s">
                 <div class="signup-form-group">
-                    <!-- <label for="" class="signup-form-lbl">
-                        Name
-                    </label> -->
                     <input type="text" class="signup-form-input" placeholder="please enter your full name">
                 </div>
             </div>
             
             <div class="wow fadeInUp" data-wow-delay="0.3s">
                 <div class="signup-form-group">
-                    <!-- <label for="" class="signup-form-lbl">
-                        Email
-                    </label> -->
                     <input type="email" class="signup-form-input" placeholder="enter your work email">
                 </div>
             </div>
             
             <div class="wow fadeInUp" data-wow-delay="0.3s">
                 <div class="signup-form-group">
-                    <!-- <label for="" class="signup-form-lbl">
-                        Phone Number
-                    </label> -->
-                    <input type="text" class="signup-form-input" placeholder="enter your contact number">
-                </div>        
+                    <input type="tel" onkeypress="isNumber(event);"  maxlength="10" class="signup-form-input" placeholder="enter your contact number">
+                </div>
             </div>
             
             <div class="wow fadeInUp" data-wow-delay="0.4s">
                 <div class="signup-form-group">
-                    <!-- <label for="" class="signup-form-lbl">
-                        Enter User/Channel Name
-                    </label> -->
                     <div class="d-flex gap-3">
                         <select class="signup-form-input">
                             <option class="dropdown-item" selected>
@@ -393,9 +381,6 @@
             
             <div class="wow fadeInUp" data-wow-delay="0.4s">
                 <div class="signup-form-group">
-                    <!-- <label for="" class="signup-form-lbl">
-                        Channel Link
-                    </label> -->
                     <input type="email" class="signup-form-input" placeholder="enter your social media channel link">
                 </div>
             </div>
