@@ -61,6 +61,7 @@
                 <a href="brands.html" class="nav-item nav-link">brands</a>
                 <a href="aboutus.html" class="nav-item nav-link">about us</a>
                 <a href="careers.html" class="nav-item nav-link">careers</a>
+                <a href="case-studies.html" class="nav-item nav-link">case studies</a>
                 <a href="contact.html" class="nav-item nav-link">contact us</a>
             </div>
         </div>
@@ -353,7 +354,8 @@
             
             <div class="wow fadeInUp" data-wow-delay="0.3s">
                 <div class="signup-form-group">
-                    <input type="tel" onkeypress="isNumber(event);"  maxlength="10" class="signup-form-input" placeholder="enter your contact number">
+                    <input type="tel" maxlength="10" onkeypress="validatePhoneNumber();" id="phone-number-input" 
+                    class="signup-form-input" ondrop="return false;" onpaste="return false;" placeholder="enter your contact number" autocomplete="off" required />
                 </div>
             </div>
             
@@ -387,7 +389,7 @@
             
             <div class="text-center wow fadeIn" data-wow-delay="0.5s">
                 <div class="signup-form-group">
-                    <a href="" class="btn btn-dark-bg" style="padding: 14px 16px;">Become an Influencer</a>
+                    <a href="javascript:void(0);" onclick="" class="btn btn-dark-bg" style="padding: 14px 16px;">Become an Influencer</a>
                 </div>
             </div>
         </div>
