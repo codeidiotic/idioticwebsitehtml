@@ -56,6 +56,22 @@
     background: #f0f2f5;
 }
 
+.bground-sea{
+    background: linear-gradient(to top, rgb(0 175 255 / 20%) 0, rgba(255, 255, 255, 0) 70%);
+}
+
+.bg-orange{
+    background-color: orange;
+}
+
+.bground-main{
+    background-color: var(--primary);
+}
+
+.bground-brown{
+    background-color: #f2711c;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
@@ -1548,4 +1564,66 @@
 
 .casestudy-page-card:hover::before{
     opacity: 1;
-} 
+}
+
+.careers-page-banner{
+    min-height: 55vh;
+    background: url("../img/banner/careers-banner-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    position: relative;
+}
+
+.careers-page-banner::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.job-card-container{
+    border-left: solid 3px var(--dark);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.job-card-container:hover{
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.35);
+}
+
+.job-profile-badge{
+    border-radius: 3px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    padding: 0.25rem 0.75rem;
+}
+
+.job-description-modal .modal-fullscreen{
+    width: 100rem;
+    height: 50%;
+}
+
+.job-description-modal .list-group-item{
+    border: 0;
+    color: #636f6f;
+}
+
+.job-description-modal .list-group-item::before{
+    content: "";
+    background-image: url(../img/icons/circle-correct.png);
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 100%;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    margin-left: -0.6rem;
+    top: 0.3rem;
+}
