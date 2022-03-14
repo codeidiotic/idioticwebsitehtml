@@ -302,23 +302,6 @@ function brandsPageTestimonial(){
             }
         }
     });
-
-    // $(".casestudies-container").slick({
-    //     autoplay: true,
-    //     autoplaySpeed: 3500,
-    //     infinite: true,
-    //     arrows: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     responsive: [
-    //         {
-    //             breakpoint: 576,
-    //             settings: {
-    //                 arrows: false
-    //             }
-    //         }
-    //     ]
-    // });
 }
 
 function viewMoreCaseStudies(){
