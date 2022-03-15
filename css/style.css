@@ -219,15 +219,8 @@
     color: var(--primary);
 }
 
-@media (max-width: 991.98px) {
-    .navbar .navbar-nav .nav-link  {
-        margin-right: 0;
-        padding: 10px 0;
-    }
-
-    .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
-    }
+@media (max-width: 992px) {
+    
 }
 
 /* .navbar .navbar-brand,
@@ -250,22 +243,7 @@
 }
 
 @media (min-width: 992px) {
-    .navbar .nav-item .dropdown-menu {
-        display: block;
-        border: none;
-        margin-top: 0;
-        top: 150%;
-        opacity: 0;
-        visibility: hidden;
-        transition: .5s;
-    }
-
-    .navbar .nav-item:hover .dropdown-menu {
-        top: 100%;
-        visibility: visible;
-        transition: .5s;
-        opacity: 1;
-    }
+    
 }
 
 
@@ -436,6 +414,23 @@
     .feature-text  {
         padding-left: 1.75rem;
     }
+
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -548,13 +543,6 @@
     width: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
     z-index: 1;
-}
-
-@media (min-width: 768px) {
-    .testimonial-carousel::before,
-    .testimonial-carousel::after {
-        width: 200px;
-    }
 }
 
 @media (min-width: 992px) {
@@ -890,14 +878,6 @@
     height: 11.5rem;
 }
 
-/* .network-card:hover .team-item .team-text{
-    height: 11.5rem;
-} */
-
-/* .network-card .team-item .team-social{
-    padding-bottom: 1rem;
-} */
-
 .networks-card-container .slick-prev{
     left: -2%;
     top: -10%;
@@ -908,7 +888,6 @@
     top: -10%;
 }
 
-/* Influencer Page Signup Page */
 .signup-form{
     padding: 0;
     max-width: 50rem;
@@ -918,43 +897,6 @@
     margin-bottom: 1.5rem;
     border-radius: 10px;
     text-align: center;
-}
-
-.join-text{
-    font-size: 1.25rem;
-    color: #d3e5ff;
-}
-
-.left-section-signup-form{
-    width: 50%;
-    padding: 1.5rem 1rem;
-}
-
-.left-section-signup-form input{
-    margin-bottom: 1rem;
-}
-
-.left-section-signup-form input::placeholder{
-    font-size: 0.75rem;
-}
-
-.right-section-signup-form{
-    background-image: url("../img/influencers/model.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top -4.5rem left 0;
-    width: 50%;
-    border-radius: 0 10px 10px 0;
-}
-
-@media (min-width: 0) and (max-width: 576px){
-    .left-section-signup-form{
-        width: 100%;
-    }
-
-    .right-section-signup-form{
-        display: none;
-    }
 }
 
 .header{
@@ -970,7 +912,6 @@
 
 .work-done-card-container{
     padding: 2rem 0.5rem 2rem 1.5rem;
-    /* background: rgb(245 245 245 / 50%); */
     -webkit-transition: all 150ms ease-in;
     transition: all 150ms ease-in;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
@@ -978,7 +919,6 @@
 
 .work-done-card-container:hover{
     box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 25%);
-    /* background: rgb(240 248 255); */
     background: var(--primary);
     color: var(--light);
 }
@@ -1070,12 +1010,6 @@
     margin-left: auto;
 }
 
-@media (min-width: 0) and (max-width: 768px){
-    .modal-fullscreen{
-        width: 100%;
-    }
-}
-
 .social-media-icons{
     display: flex;
     justify-content: space-between;
@@ -1086,7 +1020,6 @@
 .social-media-icons p{
     font-family: 'Quicksand', sans-serif;
     color: var(--dark);
-    /* color: #1B2C51; */
 }
 
 .social-media-icons p:hover{
@@ -1139,11 +1072,8 @@
     min-height: 35rem;
     background: var(--dark) url("../img/banner/contact-us-5.jpg");
     background-repeat: no-repeat;
-    /* background-position-x: left; */
-    /* background-position-y: center; */
     background-position: center;
     background-size: cover;
-    /* border-bottom-right-radius: 15rem; */
 }
 
 .contactus-banner-text{
@@ -1225,11 +1155,6 @@
     filter: grayscale(0);
 }
 
-/* .network-cards-container{
-    min-height: 20rem;
-    padding: 0 1rem;
-} */
-
 .influencers-category-item{
     list-style: none;
     margin-bottom: 1rem;
@@ -1265,21 +1190,11 @@
     border-radius: 8px;
 }
 
-@media (max-width: 768px){
+@media (min-width: 769px) and (max-width: 1024px){
     .influencer-signup-form{
-        width: 100%;
-        padding: 1rem 2rem 2.5rem 2rem;
+        width: 75%;
     }
 }
-
-/* .influencer-signup-form .signup-form-input{
-    opacity: 0.9;
-    padding: 14px 16px;
-    font-size: 0.9rem;
-    border-radius: 6px;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    background-color: #f0f2f5;
-} */
 
 .signup-form-input:focus-visible{
     outline-color: rgb(27 60 110 / 25%);
@@ -1438,6 +1353,10 @@
         width: 9rem;
         margin: 1.5rem auto;
     }
+
+    .founders-carousel .slick-slide > div{
+        text-align: center;
+    }
 }
 
 .aboutus-banner{
@@ -1453,13 +1372,12 @@
 }
 
 .founder-card{
-    /* min-height: 35rem; */
     transition: all 250ms;
 }
 
-/* .founder-card:hover{
-    transform: scale(1.05);
-} */
+.founders-carousel .slick-slide > div{
+    margin-right: 0;
+}
 
 .founder-card:hover .founder-card-img{
     transform: scale(1.03);
@@ -1524,7 +1442,6 @@
     top: 0;
     left: 0;
     background: linear-gradient(80deg, #00afff, #33d8ea);
-    /* background-color: rgba(0, 0, 0, 0.9); */
     position: absolute;
     opacity: 0.7;
 }
@@ -1644,5 +1561,34 @@
 
     .testimonial-content{
         width: 90%;
+    }
+
+    .testimonial-carousel::before,
+    .testimonial-carousel::after {
+        width: 200px;
+    }
+
+    .w-md-100{
+        width: 100%;
+    }
+
+    .w-md-75{
+        width: 75%;
+    }
+
+    .modal-fullscreen{
+        width: 100%;
+    }
+
+    .influencer-signup-form{
+        width: 100%;
+        padding: 1rem 2rem 2.5rem 2rem;
+    }
+
+    .case-study-detail .modal-fullscreen{
+        width: 100%;
+        height: 75%;
+        position: absolute;
+        bottom: 0;
     }
 }
