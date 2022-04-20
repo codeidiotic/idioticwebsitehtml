@@ -25,7 +25,6 @@
         }
     });
     
-    
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -258,8 +257,14 @@ function createInfluencerSlider(){
 
     $(".case-study-detail-showcase").slick({
         autoplay: true,
-        autoplaySpeed: 500,
-        arrows: false
+        autoplaySpeed: 1000,
+        arrows: true,
+        pauseOnHover: true
+    });
+
+    $(".case-study-detail-showcase").on('init afterChange reInit', function(event, slick, currentSlide){
+        let index = (currentSlide ? currentSlide : 0) + 1;
+        $("#case-study-details-slider-counter").text(index + "/" + slick.slideCount);
     });
 }
 
