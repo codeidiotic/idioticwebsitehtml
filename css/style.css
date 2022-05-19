@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 /********** Template CSS **********/
 :root {
     --light: #EFF5FF;
@@ -36,6 +38,14 @@
 
 .ff-quicksand{
     font-family: 'Quicksand', sans-serif;
+}
+
+.ff-ptserif{
+    font-family: "PT Serif", serif;
+}
+
+.ff-garamond{
+    font-family: "EB Garamond", serif;
 }
 
 .lineheight-1{
@@ -1601,5 +1611,37 @@
         height: 75%;
         position: absolute;
         bottom: 0;
+    }
+}
+
+.team-card-container{
+    max-width: 20rem;
+}
+
+.team-card-body{
+    position: absolute;
+    left: -1rem;
+    bottom: -0.5rem;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0.5rem 1rem;
+}
+
+.aboutus-subheading{
+    width: 50%;
+}
+
+.team-img-container{
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 0.75rem;
+}
+
+.team-card-body{
+    font-family: "PT Serif", serif;
+}
+
+@media (max-width: 768px){
+    .aboutus-subheading{
+        width: 100%;
     }
 }
