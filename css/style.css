@@ -768,6 +768,12 @@
     filter: grayscale(0);
 }
 
+@media (max-width: 768px){
+    .brand-image-container img{
+        filter: grayscale(0);
+    }
+}
+
 .case-study-detail-showcase .slick-next{
     top: 100%;
     right: 40%;
@@ -1179,6 +1185,24 @@
 .influencers-category-item{
     list-style: none;
     margin-bottom: 1rem;
+    display: inline;
+}
+
+.influencers-categories-container ul{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 1.5rem;
+}
+
+.influencers-categories-container ul::-webkit-scrollbar{
+    height: 6px;
+    background: #d9e0e3;
+    border-radius: 3px;
+}
+
+.influencers-categories-container ul::-webkit-scrollbar-thumb{
+    background: #a0a9ad;
+    border-radius: 3px;
 }
 
 .influencers-category-item a{
@@ -1377,6 +1401,10 @@
 
     .founders-carousel .slick-slide > div{
         text-align: center;
+    }
+
+    .contact-us-header{
+        min-height: 20rem;
     }
 }
 
@@ -1615,7 +1643,8 @@
 }
 
 .team-card-container{
-    max-width: 20rem;
+    max-width: 22rem;
+    margin: 0 auto;
 }
 
 .team-card-body{
@@ -1624,6 +1653,7 @@
     bottom: -0.5rem;
     background-color: rgba(0, 0, 0, 0.85);
     padding: 0.5rem 1rem;
+    /* text-align: center; */
 }
 
 .aboutus-subheading{
@@ -1640,8 +1670,24 @@
     font-family: "PT Serif", serif;
 }
 
+.our-vision-text{
+    font-size: 1.3rem;
+    line-height: 2.6rem;
+    width: 75%;
+}
+
 @media (max-width: 768px){
     .aboutus-subheading{
         width: 100%;
+    }
+
+    .our-vision-text{
+        font-size: 1rem;
+        line-height: 1.75rem;
+        width: 100%;
+    }
+
+    .contact-us-card:hover{
+        transform: scale(1);
     }
 }
