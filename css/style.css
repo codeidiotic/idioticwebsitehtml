@@ -1497,13 +1497,14 @@
 
 .casestudy-page-card{
     min-height: 25rem;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: top;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     position: relative;
+    background-color: #d9e0e3;
 }
 
 .casestudy-page-card .card{
@@ -1690,4 +1691,28 @@
     .contact-us-card:hover{
         transform: scale(1);
     }
+}
+
+.casestudy-page-card-container{
+    border-radius: 15px;
+    min-height: 30rem;
+    max-width: 22rem;
+    background-color: #FFFFFF;
+    padding: 2rem;
+    box-shadow: 0 16px 12px -6px rgb(0 0 0 / 6%);
+    border: 2px solid #eaeaea;
+    transition: all 350ms ease-in;
+}
+
+.casestudy-page-card-container:hover{
+    border-color: #a5eaff;
+    box-shadow: 0 16px 16px -6px rgb(0 0 0 / 5%);
+    -webkit-transform: translate(0, -3px);
+    -ms-transform: translate(0, -3px);
+    transform: translate(0, -3px);
+}
+
+.casestudy-page-card-container img{
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
 }
